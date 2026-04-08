@@ -42,6 +42,9 @@
   <!-- Styles -->
   <link rel="stylesheet" href="styles.css">
 
+  <!-- JavaScript -->
+  <script src="script.js" defer></script>
+
   <!-- Schema.org Markup  Figure out if this part will be needed or not-->
   <script type="application/ld+json">
   {
@@ -88,35 +91,46 @@
 
  <main>
 
-  <!-- Add image slider and slideshow gallery--> <!-- alt="" loading="lazy"> so website is faster-->
   <section class="hero" aria-label="Photography highlights">
+  
+  <button class="arrow prev" id="prev" aria-label="Previous image">
+    &#10094;
+  </button>
+
+  <div class="slider-window">
+    <div class="slides">
+      <figure class="slide">
+        <img src="images/Asu.jpg" alt="Photography sample 1" loading="lazy">
+      </figure>
+
+      <figure class="slide">
+        <img src="images/asulogo.png" alt="Photography sample 2" loading="lazy">
+      </figure>
+
+      <figure class="slide">
+        <img src="images/sparky.jpg" alt="Photography sample 3" loading="lazy">
+      </figure>
+
+      <figure class="slide">
+        <img src="images/Asu.jpg" alt="Photography sample 4" loading="lazy">
+      </figure>
+
+      <figure class="slide">
+        <img src="images/asulogo.png" alt="Photography sample 5" loading="lazy">
+      </figure>
+    </div>
+  </div>
+
+  <button class="arrow next" id="next" aria-label="Next image">
+    &#10095;
+  </button>
 
   <div class="hero-content">
     <h1>One day these moments will be memories.<br>
-      If you’re ready to capture them, let’s make them last.</h1>
+      If you’re ready to capture them, let’s make them last!
+    </h1>
     <a href="contact.html" class="cta-button">Book a Session</a>
   </div>
-
-  <div class="slides">
-    <figure class="slide"><img src="images/1.jpg" alt="" loading="lazy"></figure>
-    <figure class="slide"><img src="images/2.jpg" alt="" loading="lazy"></figure>
-    <figure class="slide"><img src="images/3.jpg" alt="" loading="lazy"></figure>
-    <figure class="slide"><img src="images/4.jpg" alt="" loading="lazy"></figure>
-    <figure class="slide"><img src="images/5.jpg" alt="" loading="lazy"></figure>
-    <figure class="slide"><img src="images/6.jpg" alt="" loading="lazy"></figure>
-    <figure class="slide"><img src="images/7.jpg" alt="" loading="lazy"></figure>
-    <figure class="slide"><img src="images/8.jpg" alt="" loading="lazy"></figure>
-    <figure class="slide"><img src="images/9.jpg" alt="" loading="lazy"></figure>
-    <figure class="slide"><img src="images/10.jpg" alt="" loading="lazy"></figure>
-</div>
-
-  <button class="arrow prev" id="prev" aria-label="Previous image">
-    &#10094;
-    </button>
-
-    <button class="arrow next" id="next" aria-label="Next image">
-    &#10095;
-  </button>
 
 </section>
 
@@ -129,7 +143,7 @@
       <li class="capture-preview__item">
         <article class="capture-card">
           <a href="portfolio.html#weddings" class="capture-card__link">
-            <img src="images/wedding-preview.jpg" alt="Bride and groom standing together during a wedding session" class="capture-card__image">
+            <img src="images/Couples.jpg" alt="Bride and groom standing together during a wedding session" class="capture-card__image">
             <h3 class="capture-card__title">Wedding</h3>
           </a>
         </article>
@@ -138,7 +152,7 @@
       <li class="capture-preview__item"> <!--Engagement/Couple card-->
         <article class="capture-card">
           <a href="portfolio.html#couples" class="capture-card__link">
-            <img src="images/couples-preview.jpg" alt="Couple embracing during an outdoor portrait session" class="capture-card__image">
+            <img src="images/Proposal.jpg" alt="Couple embracing during an outdoor portrait session" class="capture-card__image">
             <h3 class="capture-card__title">Couples</h3>
           </a>
         </article>
@@ -148,7 +162,7 @@
         <article class="capture-card">
           <a href="portfolio.html#family" class="capture-card__link">
             <img
-              src="images/family-preview.jpg" alt="Family smiling together during a portrait session"class="capture-card__image">
+              src="images/BabyAnnouncement.jpg" alt="Family smiling together during a portrait session"class="capture-card__image">
             <h3 class="capture-card__title">Family</h3>
           </a>
         </article>
@@ -158,7 +172,7 @@
         <article class="capture-card">
           <a href="portfolio.html#lifestyle" class="capture-card__link">
             <img
-              src="images/lifestyle-preview.jpg" alt="Lifestyle photo of a person in a natural setting" class="capture-card__image">
+              src="images/AthleticSession.jpg" alt="Lifestyle photo of a person in a natural setting" class="capture-card__image">
             <h3 class="capture-card__title">Lifestyle</h3>
           </a>
         </article>
@@ -173,42 +187,45 @@
 
 <!------------------------------------Get to Know Me--------------------------->
 <section class="about-me">
-  <h2>Get to Know Me</h2>
-  <p>Hi, I'm Nevaeh, a passionate photographer based in Jacksonville, NC. I specialize in capturing the beauty of life's most precious moments, from weddings and engagements to family portraits and lifestyle sessions. My approach is all about creating a comfortable and enjoyable experience for my clients, allowing their true personalities to shine through in every shot. With a keen eye for detail and a love for storytelling, I strive to create timeless images that you will cherish for years to come. When I'm not behind the camera, you can find me exploring new places, spending time with loved ones, or indulging in my love for coffee and good books.</p>
+  <div class="about-me__container">
+    
+    <div class="about-me__image-wrapper">
+      <img src="images/asu2.png" alt="Photo of Nevaeh, the photographer, smiling and holding a camera" class="about-me__image">
+    </div>
 
-  <img src="images/about-me.jpg" alt="Photo of Nevaeh, the photographer, smiling and holding a camera" class="about-me__image">
+    <div class="about-me__content">
+      <h2>Get to Know Me</h2>
+      <p>
+        Hi, I'm Nevaeh, a passionate photographer based in Jacksonville, NC. I specialize in capturing the beauty of life's most precious moments, from weddings and engagements to family portraits and lifestyle sessions. My approach is all about creating a comfortable and enjoyable experience for my clients, allowing their true personalities to shine through in every shot. With a keen eye for detail and a love for storytelling, I strive to create timeless images that you will cherish for years to come. When I'm not behind the camera, you can find me exploring new places, spending time with loved ones, or indulging in my love for coffee and good books.
+      </p>
 
-  <a href="about.html" class="button">Read My Story</a>
+      <a href="about.html" class="about-me__button">Read My Story</a>
+    </div>
 
+  </div>
 </section>
 
 
  </main>
 
   <!------------------------------------Footer Section--------------------------->
-  <footer>
-  
-  <nav aria-label="Social media links"> <!-- Add real social media links here -->
-    <ul class="social-links">
-      <li>
-        <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer">
-          Facebook
-        </a>
-      </li>
+  <footer class="site-footer">
+  <div class="site-footer__top">
+    <div class="site-footer__logo">
+      <a href="index.html">LOGO</a>
+    </div>
 
-      <li>
-        <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">
-          Instagram
-        </a>
-      </li>
-    </ul>
-  </nav>
+    <div class="site-footer__social">
+      <p>Follow Along</p>
+      <a href="#" aria-label="Facebook">FB</a>
+      <a href="#" aria-label="Instagram">IG</a>
+    </div>
+  </div>
 
-  <p>&copy;2026 Nevaeh J Photography. All rights reserved.<br>
-    Website developed by 
-    <a href="https://www.linkedin.com/in/carlos-ochoa-sanchez" target="_blank" rel="noopener noreferrer">
-      Carlos Ochoa-Sanchez</a> </p>
-
+  <div class="site-footer__bottom">
+    <p>© 2026 Nevaeh J Photography. All rights reserved.</p>
+    <p>Website developed by <a href="https://www.linkedin.com/in/carlos-ochoa-sanchez" target="_blank">Carlos Ochoa-Sanchez</a></p>
+  </div>
 </footer>
 
   <!-- Scripts -->
