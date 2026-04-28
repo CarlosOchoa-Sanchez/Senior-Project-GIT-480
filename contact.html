@@ -69,6 +69,9 @@
   <div class="site-wrapper">
     <header>
         <nav> 
+          <button class="menu-toggle" aria-label="Open menu" aria-expanded="false">
+            ☰
+          </button>
             <a href="index.html" class="logo">Nevaeh J Photography</a>
             <ul class="nav-links">
             <li><a href="investment.html">Investment</a></li>
@@ -78,46 +81,49 @@
         </nav>
     </header>
     
-    <main>
-        <section class="contact-form">
-        <h1>Every moment deserves to be remembered the right way.<br>
-        If you’re here, it means something important is about to happen in your life.<br>
-        Let’s capture it!</h1>
+  <main>
+      <main class="contact-page">
 
-        <!-- Add contact form here --> <!--add form information (Formspree, Netlify, Google Forms)-->
-         <form action="" method="">
-            <label for="name" class="form-label">Full Name:</label>
-            <input type="text" id="name" name="name" class="form-input" required>
+  <section class="contact-hero">
+    <h1>Every moment deserves to be remembered the right way.</h1>
+    <h1>If you’re here, it means something important is about to happen in your life.</h1>
+    <p>Let’s capture it</p>
+  </section>
 
-            <label for="email" class="form-label">Email Address:</label>
-            <input type="email" id="email" name="email" class="form-input" required>
+  <section class="contact-section">
+    <form class="contact-form" action="" method="">
+      <label for="name">Full Name*</label>
+      <input type="text" id="name" name="name" required>
 
-            <label for="phone" class="form-label">Phone Number:</label>
-            <input type="tel" id="phone" name="phone" class="form-input">
+      <label for="email">Email Address*</label>
+      <input type="email" id="email" name="email" required>
 
-            <label for="instagram" class="form-label">Instagram Username (let's connect!):</label>
-            <input type="text" id="instagram" name="instagram" class="form-input">
+      <label for="phone">Phone Number*</label>
+      <input type="tel" id="phone" name="phone" required>
 
-            <label for="pinterest" class="form-label">Pinterest Board Link (optional):</label>
-            <input type="text" id="pinterest" name="pinterest" placeholder="Paste your board idea here" class="form-input">
+      <label for="instagram">Instagram Username *Let's Connect:)*</label>
+      <input type="text" id="instagram" name="instagram" placeholder="example: @nevaehj.photography">
 
-            <label for="message" class="form-label">Tell me about your vision </label>
-            <textarea id="message" name="message" class="form-input" rows="5" placeholder="Share your ideas and expectations..." required></textarea>
+      <label for="pinterest">Pinterest Board Link</label>
+      <input type="url" id="pinterest" name="pinterest" placeholder="Paste your board idea here">
 
-            <label for="referral" class="form-label">How did you hear about us?</label>
-            <select id="referral" name="referral" class="form-input">
-                <option value="" disabled selected>Select option</option>
-                <option value="instagram">Instagram</option>
-                <option value="facebook">Facebook</option>
-                <option value="search-engine">Internet</option>
-                <option value="friend">From a friend</option>
-                <option value="other">Other</option>
-            </select>
+      <label for="message">Tell me about your vision</label>
+      <textarea id="message" name="message" rows="5" placeholder="Share your ideas and expectations..." required></textarea>
 
-            <button type="submit" class="form-button">Send Message</button>
-        </form>
-        </section>
-    </main>
+      <label for="referral">How did you hear about us?</label>
+      <select id="referral" name="referral">
+        <option value="" disabled selected>Select option</option>
+        <option value="instagram">Instagram</option>
+        <option value="facebook">Facebook</option>
+        <option value="search-engine">Internet</option>
+        <option value="friend">From a friend</option>
+        <option value="other">Other</option>
+      </select>
+
+      <button type="submit" class="contact-submit">Send Inquiry</button>
+    </form>
+  </section>
+</main>
 <!--Footer-->
 
   <footer class="site-footer">
@@ -139,7 +145,9 @@
   </div>
 </footer>
   </div>
-
+<!-- Scripts -->
+  <script src="script.js"></script> 
+  </div>
 </body>  
 
 </html> 
